@@ -1,0 +1,13 @@
+#Generic Libraries
+import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+from sklearn.datasets import fetch_california_housing
+data = fetch_california_housing()
+print(data.DESCR)
+df = pd.DataFrame()
+data.data
+data.data.shape
+df = pd.DataFrame(data.data)
+geolocator = Nominatim(user_agent= 'geoapiExercises')
+geolocator.reverse('37.88' + ',' + '-122.23').raw
